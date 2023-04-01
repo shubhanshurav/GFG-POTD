@@ -10,10 +10,17 @@ using namespace std;
 class Solution {
   public:
     long long int minOperations(int N) {
-        
+       
+       //Approach - 01  
       long long int divide = N/2;
       long long int rem = N-divide;
       return rem*divide; 
+      
+      /* Approach - 02 
+      
+      return (n/2) * (n-(n/2));
+      
+      */
     } 
 };
 
