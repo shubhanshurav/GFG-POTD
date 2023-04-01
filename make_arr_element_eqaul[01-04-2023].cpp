@@ -11,12 +11,12 @@ class Solution {
   public:
     long long int minOperations(int N) {
        
-       //Approach - 01  
+      //Approach - 01  
       long long int divide = N/2;
       long long int rem = N-divide;
-      return rem*divide; 
+      return rem*divide;  
       
-      /* Approach - 02 
+      /* Approach - 02 [Only 1 Line Solut]
       
       return (n/2) * (n-(n/2));
       
