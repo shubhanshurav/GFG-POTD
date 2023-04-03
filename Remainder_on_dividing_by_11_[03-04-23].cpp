@@ -1,13 +1,15 @@
-//{ Driver Code Starts
-//Initial Template for C++
 
 #include<bits/stdc++.h> 
 using namespace std; 
 
 class Solution{
 public:
+
+    // Approach: Just convert string to number and through converting just mod it by 11.
+
     int xmod11(string x)
     {
+        //calculate size of string
        int size = x.size();
        int n = 0;
        
@@ -19,9 +21,7 @@ public:
     }
 };
 
-
 //{ Driver Code Starts.
-
 
 int main()
 {
