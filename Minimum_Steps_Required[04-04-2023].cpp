@@ -1,6 +1,3 @@
-//{ Driver Code Starts
-// Initial Template for C++
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,8 +18,6 @@ int minSteps(string str) {
     return min(a,b)+1;
 }
 
-//{ Driver Code Starts.
-
 int main() {
 
     int t;
@@ -33,5 +28,3 @@ int main() {
         cout << minSteps(str) << endl;
     }
 }
-
-// } Driver Code Ends
