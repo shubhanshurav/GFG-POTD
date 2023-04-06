@@ -3,7 +3,6 @@ using namespace std;
 
 
 class Array{
-
 public:
     template <class T>
     static void input(vector<T> &A,int n){
@@ -30,14 +29,22 @@ class Solution {
   public:
     int equalSum(int N, vector<int> &A) {
         
+        // calculate Total sum of array 
         int totalSum = accumulate(A.begin(),A.end(),0);
+
+        // Let starting sum = 0
         int startingSum = 0;
         for(int i=0;i<N;i++){
+            // if totalSum-firstArrayElement-startingSum == starting sum
+            // then return ith index + 1
             if(totalSum-A[i]-startingSum == startingSum){
                 return i+1;
             }    
+            // Update starting sum
             startingSum += A[i];
         }
+
+        // return -1 if left & right sum is not equal
         return -1;
     }
 };
