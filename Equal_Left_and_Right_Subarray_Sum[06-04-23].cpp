@@ -35,7 +35,7 @@ class Solution {
         // Let starting sum = 0
         int startingSum = 0;
         for(int i=0;i<N;i++){
-            // if totalSum-firstArrayElement-startingSum == starting sum
+            // if totalSum-ithArrayElement-startingSum == starting sum
             // then return ith index + 1
             if(totalSum-A[i]-startingSum == startingSum){
                 return i+1;
