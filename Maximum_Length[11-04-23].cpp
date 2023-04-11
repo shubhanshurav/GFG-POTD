@@ -17,7 +17,6 @@ public:
     }
 };
 
-
 int main() {
     int T;
     cin >> T;
@@ -27,7 +26,6 @@ int main() {
 
         Solution ob;
         int ans = ob.solve(a, b, c);
-     
 
         cout <<  ans << "\n";
     }
